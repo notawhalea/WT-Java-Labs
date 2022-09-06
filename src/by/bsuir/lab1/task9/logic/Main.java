@@ -1,4 +1,4 @@
-package by.bsuir.lab1.task9;
+package by.bsuir.lab1.task9.logic;
 
 import java.awt.*;
 
