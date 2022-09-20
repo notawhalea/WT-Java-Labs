@@ -2,9 +2,6 @@ package by.bsuir.lab1.task9.logic;
 
 import java.awt.*;
 
-import by.bsuir.lab1.task9.logic.Ball;
-import by.bsuir.lab1.task9.logic.Bucket;
-
 public class Main {
     public static void main(String[] args) {
         Ball ball1 = new Ball(1, Color.GREEN);
