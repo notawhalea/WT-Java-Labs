@@ -9,6 +9,10 @@ public class TeaPotModel extends TeaPot {
         super(0.0, 0.0, 0.0);
     }
 
+    /**
+     * @param input it's  a list with loaded strings
+     * @param offset represents the first line of current object data
+     */
     public void load(List<String> input, int offset){
         String param = input.get(offset+1);
         String res = param.substring(param.indexOf('>')+1, param.lastIndexOf('<'));
@@ -23,6 +27,9 @@ public class TeaPotModel extends TeaPot {
         setVoltage(Double.parseDouble(res));
     }
 
+    /**
+     * @return converts model to entity
+     */
     public TeaPot toTeaPot(){
         return new TeaPot(getPrice(), getCapacity(), getVoltage());
     }

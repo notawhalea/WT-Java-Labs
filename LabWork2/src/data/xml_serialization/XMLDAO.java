@@ -13,11 +13,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * items loaded from file
+ */
 public class XMLDAO {
 
     /**
-     * метод поиска приборов по критериям
-     * @return список приборов подходящих по заданным критериям
+     * @return items loaded from file
      */
     public List<Item> load() {
         List<Item> res = new ArrayList<>();

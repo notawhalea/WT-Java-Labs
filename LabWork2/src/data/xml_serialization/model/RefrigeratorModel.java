@@ -9,6 +9,10 @@ public class RefrigeratorModel extends Refrigerator {
         super(0.0, 0.0, 0.0, 0);
     }
 
+    /**
+     * @param input it's  a list with loaded strings
+     * @param offset represents the first line of current object data
+     */
     public void load(List<String> input, int offset){
         String param = input.get(offset+1);
         String res = param.substring(param.indexOf('>')+1, param.lastIndexOf('<'));
@@ -27,6 +31,9 @@ public class RefrigeratorModel extends Refrigerator {
         setHeight(Integer.parseInt(res));
     }
 
+    /**
+     * @return converts model to entity
+     */
     public Refrigerator toRefrigerator(){
         return new Refrigerator(price, getMinTemperature(), getMaxTemperature(), getHeight());
     }

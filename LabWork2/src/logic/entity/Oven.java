@@ -5,6 +5,12 @@ public class Oven extends Item{
     private double minHeatTemperature;
     private int regimes;
 
+    /**
+     * @param price it is price of the item
+     * @param maxHeatTemperature it his Max and min temperature of the item
+     * @param minHeatTemperature
+     * @param regimes it is a regimes of the item
+     */
     public Oven(double price, double maxHeatTemperature, double minHeatTemperature, int regimes) {
         this.price = price;
         this.maxHeatTemperature = maxHeatTemperature;
