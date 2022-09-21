@@ -1,0 +1,19 @@
+<data>
+    <Oven>
+        <price>123.0</price>
+        <min>2.0</min>
+        <max>3.0</max>
+        <reg>5</reg>
+    </Oven>
+    <Refrigerator>
+        <price>123.0</price>
+        <min>2.0</min>
+        <max>3.0</max>
+        <height>5</height>
+    </Refrigerator>
+    <TeaPot>
+        <price>123.0</price>
+        <capacity>2.0</capacity>
+        <voltage>3.0</voltage>
+    </TeaPot>
+</data>

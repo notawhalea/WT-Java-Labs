@@ -4,11 +4,13 @@ import data.xml_serialization.XMLDAO;
 import logic.entity.Item;
 import logic.entity.TeaPot;
 
-public class Presenter {
-    private XMLDAO xmldao = new XMLDAO();
-    private Item[] items = null;
+import java.util.List;
 
-    public Item[] getItems() {
+public class Presenter {
+    private final XMLDAO xmldao = new XMLDAO();
+    private List<Item> items = null;
+
+    public List<Item> getItems() {
         if (items == null)
             items = xmldao.load();
         return items;
