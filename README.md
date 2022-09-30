@@ -21,4 +21,4 @@ Technical task u can find in folder with solutions for every lab in pdf format:w
 Still in progress? Convert to draft!:wink:
 
 >I won’t abuse the pain. My hearts intoxicated. My mind’s frustrated. A storm like a hurricane. All we do is go. Up going up go down.Go around this is us The Usual.Wanderlust running blind. Time is never on our side The Usual.:microphone:The Usual - Shannon Jae Prior
->:headphones:/play letitgo Play
+
