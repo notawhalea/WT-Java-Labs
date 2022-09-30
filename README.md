@@ -11,6 +11,7 @@ This is my solutions of 15 tasks.
 **********
 **Second lab**
 I create a single threaded console application!:cherry_blossom:
+**********
 **Third lab**
 I create a client-server application "Archive":innocent:
 **********
