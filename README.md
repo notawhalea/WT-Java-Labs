@@ -11,6 +11,8 @@ This is my solutions of 15 tasks.
 **********
 **Second lab**
 I create a single threaded console application!:cherry_blossom:
+**Third lab**
+I create a client-server application "Archive":innocent:
 **********
 I just relax and gained experience here.
 Technical task u can find in folder with solutions for every lab in pdf format:wave:
