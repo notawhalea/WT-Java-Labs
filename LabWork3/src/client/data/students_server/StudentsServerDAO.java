@@ -17,10 +17,31 @@ public class StudentsServerDAO {
     private DataOutputStream dOutput;
 
     public void create(Student student) {
-
+        try {
+            dOutput.write(2);
+            output.writeObject(student);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
-    public void update(Student student) {
 
+    public Student read(int id) {
+        try {
+            dOutput.write(3);
+            dOutput.write(id);
+            return (Student) input.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void update(Student student) {
+        try {
+            dOutput.write(4);
+            output.writeObject(student);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public boolean connect(String login, String password){
