@@ -13,6 +13,6 @@ public class Presenter {
 
     }
     public int getToken(String login, String password){
-
+        return -1;
     }
 }
