@@ -15,8 +15,8 @@ public class Presenter {
 
     }
 
-    public void read(int id) {
-
+    public Student read(int id) {
+        return dao.read(id);
     }
 
     public void update(int token, Object input) {
@@ -24,6 +24,14 @@ public class Presenter {
     }
 
     public int getToken(String login, String password){
-        return -1;
+        if (Objects.equals(login, "") || Objects.equals(password, "")){
+            System.out.println("Empty field");
+            return -1;
+        } else {
+            Student user = dao.read(login);
+            if (!Objects.equals(password, user.getPassHash())) return -1;
+            Random random = new Random();
+            return user.getGroup() ^ user.getId() ^ random.nextInt(1000, 9999);
+        }
     }
 }

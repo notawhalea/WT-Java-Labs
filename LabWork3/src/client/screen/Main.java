@@ -16,13 +16,13 @@ public class Main {
                 presenter.connect("nikita", "225");
                 break;
             case 2:
-                presenter.create(new Student("Nikita", "Pelikh", "Andreevich", "30/01/2003", 051006, 223, Role.USER));
+                presenter.create(new Student("Nikita", "Pelikh", "Andreevich", "30/01/2003", 051004, 223, Role.USER));
                 break;
             case 3:
                 presenter.read(1445);
                 break;
             case 4:
-                presenter.update(new Student("Nikita", "Pelikh", "Andreevich", "30/01/2003", 051006, 223, Role.USER));
+                presenter.update(new Student("Nikita", "Pelikh", "Andreevich", "30/01/2003", 051004, 223, Role.USER));
                 break;
             default:
                 System.out.println("Incorrect input");
