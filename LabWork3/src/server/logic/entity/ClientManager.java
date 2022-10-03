@@ -18,6 +18,8 @@ public class ClientManager {
             ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
             ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
 
+            int token;
+            Student newbie;
             while (true){
                 switch (dInput.read()){
                     case 1:
@@ -26,12 +28,22 @@ public class ClientManager {
 
                         dOutput.write(presenter.getToken(login, password));
                         break;
+
                     case 2:
+                        token = dInput.readInt();
+                        newbie = (Student) input.readObject();
+                        presenter.create(token, newbie);
                         break;
+
                     case 3:
+                        int id = dInput.readInt();
+                        output.writeObject(presenter.read(id));
                         break;
 
                     case 4:
+                        token = dInput.readInt();
+                        newbie = (Student) input.readObject();
+                        presenter.update(token, newbie);
                         break;
                 }
             }

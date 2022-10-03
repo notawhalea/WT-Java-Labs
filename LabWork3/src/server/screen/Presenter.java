@@ -1,6 +1,12 @@
 package server.screen;
 
-import java.util.List;
+import server.data.students_database.XMLDAO;
+import server.logic.entity.Role;
+import server.logic.entity.Student;
+
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.Random;
 
 public class Presenter {
     private static Presenter instance;
@@ -11,16 +17,35 @@ public class Presenter {
     }
     private Presenter(){}
 
-    public void create(int token, Object input) {
+    private final XMLDAO dao = new XMLDAO();
 
+    //token -> id
+    private final HashMap<Integer, Integer> tokens = new HashMap<>();
+
+    public void create(int token, Student input) {
+        if (!tokens.containsKey(token)) return;
+        Student user = dao.read(tokens.get(token));
+        if (user.getRole() != Role.ADMIN) return;
+
+        if (dao.read(input.getId()) != null)
+            dao.update(input);
+        else
+            dao.create(input);
     }
 
     public Student read(int id) {
         return dao.read(id);
     }
 
-    public void update(int token, Object input) {
+    public void update(int token, Student input) {
+        if (!tokens.containsKey(token)) return;
+        Student user = dao.read(tokens.get(token));
+        if (user.getRole() != Role.ADMIN) return;
 
+        if (dao.read(input.getId()) != null)
+            dao.update(input);
+        else
+            dao.create(input);
     }
 
     public int getToken(String login, String password){

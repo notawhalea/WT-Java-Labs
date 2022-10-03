@@ -6,10 +6,16 @@ public class XMLDAO {
     public void create(Student student){
 
     }
+
+    public Student read(int id){
+        return null;
+    }
+
+    public Student read(String login){
+        return null;
+    }
+
     public void update(Student student){
 
-    }
-    public Student studentRead(int id){
-        return null;
     }
 }

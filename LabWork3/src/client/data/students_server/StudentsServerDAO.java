@@ -16,9 +16,10 @@ public class StudentsServerDAO {
     private ObjectOutputStream output;
     private DataOutputStream dOutput;
 
-    public void create(Student student) {
+    public void create(int token, Student student) {
         try {
             dOutput.write(2);
+            dOutput.writeInt(token);
             output.writeObject(student);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -35,16 +36,17 @@ public class StudentsServerDAO {
         }
     }
 
-    public void update(Student student) {
+    public void update(int token, Student student) {
         try {
             dOutput.write(4);
+            dOutput.writeInt(token);
             output.writeObject(student);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public boolean connect(String login, String password){
+    public int connect(String login, String password){
         try {
             Socket socket = new Socket("127.0.0.1", 224);
             DataInputStream dInput = new DataInputStream(socket.getInputStream());
@@ -56,7 +58,7 @@ public class StudentsServerDAO {
             dOutput.writeUTF(login);
             dOutput.writeUTF(password);
 
-            return dInput.readBoolean();
+            return dInput.readInt();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
