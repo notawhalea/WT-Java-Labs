@@ -23,10 +23,10 @@ public class ClientManager {
             while (true){
                 switch (dInput.read()){
                     case 1:
-                        String login = dInput.readUTF();
+                        String name = dInput.readUTF();
                         String password = dInput.readUTF();
 
-                        dOutput.write(presenter.getToken(login, password));
+                        dOutput.write(presenter.getToken(name, password));
                         break;
 
                     case 2:

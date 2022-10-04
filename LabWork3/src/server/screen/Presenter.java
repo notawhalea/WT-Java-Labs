@@ -48,12 +48,12 @@ public class Presenter {
             dao.create(input);
     }
 
-    public int getToken(String login, String password){
-        if (Objects.equals(login, "") || Objects.equals(password, "")){
+    public int getToken(String name, String password){
+        if (Objects.equals(name, "") || Objects.equals(password, "")){
             System.out.println("Empty field");
             return -1;
         } else {
-            Student user = dao.read(login);
+            Student user = dao.read(name);
             if (!Objects.equals(password, user.getPassHash())) return -1;
             Random random = new Random();
             return user.getGroup() ^ user.getId() ^ random.nextInt(1000, 9999);
