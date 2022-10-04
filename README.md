@@ -15,6 +15,9 @@ I create a single threaded console application!:cherry_blossom:
 **Third lab**
 I create a client-server application "Archive":innocent:
 **********
+**Fourth lab**
+I create a web application (using Servlet technology:bowtie:) allowing user to book hotel rooms. Also i define the user and administrator roles for the application.:tada:
+**********
 I just relax and gained experience here.
 Technical task u can find in folder with solutions for every lab in pdf format:wave:
 
