@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba761cf-58c0-41c8-8b33-1efc43fa96a1" name="Changes" comment="feat: edit file tree" />
+    <list default="true" id="5ba761cf-58c0-41c8-8b33-1efc43fa96a1" name="Changes" comment="docs: edit readme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +47,8 @@
       <updated>1663758218166</updated>
       <workItem from="1663758227722" duration="212000" />
       <workItem from="1664567707310" duration="371000" />
-      <workItem from="1664917315032" duration="445000" />
+      <workItem from="1664917315032" duration="798000" />
+      <workItem from="1665086042873" duration="222000" />
     </task>
     <task id="LOCAL-00001" summary="docs: edit readme">
       <created>1664567906229</created>
@@ -67,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664917444494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docs: edit readme">
+      <created>1664917857860</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664917857860</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,8 +96,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docs: edit readme" />
     <MESSAGE value="feat: edit file tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: edit file tree" />
+    <MESSAGE value="docs: edit readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: edit readme" />
   </component>
 </project>
